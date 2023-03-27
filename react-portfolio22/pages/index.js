@@ -56,7 +56,7 @@ export default function Home() {
             <AiFillGithub/>
           </div>
           <div className='realative mx-auto bg-gradient-to-b from-pink-500 rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96'>
-            <Image src={deved}/>
+            <Image src={deved} alt = 'gg'/>
           </div>
         </section>
 
@@ -65,7 +65,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
+              developer, I&apos;ve done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to create digital products
@@ -79,7 +79,7 @@ export default function Home() {
 
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design}  width={100} height={100} className="inline" />
+              <Image src={design}  width={100} height={100} className="inline" alt='gg' />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Beautiful Designs
               </h3>
@@ -95,12 +95,12 @@ export default function Home() {
             </div>
 
           <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} className="inline" />
+              <Image src={code} width={100} height={100} className="inline" alt='gg' />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
+                Do you have an idea for your next great website? Let&apos;s make it a
                 reality.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
@@ -111,12 +111,12 @@ export default function Home() {
           </div>
 
           <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} className="inline" />
+              <Image src={consulting} width={100} height={100} className="inline" alt='gg' />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Code your dream project
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
+                Do you have an idea for your next great website? Let&apos;s make it a
                 reality.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
@@ -132,7 +132,7 @@ export default function Home() {
             <h3 className='text-3xl py-1'>Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
+              developer, I&apos;ve done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to create digital products
@@ -145,22 +145,22 @@ export default function Home() {
           </div>
           <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg obeject-cover ' width={'100%'} height={'100%'} src={web1}/>
+              <Image className='rounded-lg obeject-cover ' alt='gg' width={'100%'} height={'100%'} src={web1}/>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg obeject-cover ' width={'100%'} height={'100%'} src={web2}/>
+              <Image className='rounded-lg obeject-cover ' alt='gg' width={'100%'} height={'100%'} src={web2}/>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg obeject-cover ' width={'100%'} height={'100%'} src={web3}/>
+              <Image className='rounded-lg obeject-cover ' alt='gg' width={'100%'} height={'100%'} src={web3}/>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg obeject-cover ' width={'100%'} height={'100%'} src={web4}/>
+              <Image className='rounded-lg obeject-cover ' alt='gg' width={'100%'} height={'100%'} src={web4}/>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg obeject-cover ' width={'100%'} height={'100%'} src={web5}/>
+              <Image className='rounded-lg obeject-cover ' alt='gg' width={'100%'} height={'100%'} src={web5}/>
             </div>
             <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg obeject-cover ' width={'100%'} height={'100%'} src={web6}/>
+              <Image className='rounded-lg obeject-cover ' alt='gg' width={'100%'} height={'100%'} src={web6}/>
             </div>
           </div>
         </section>
