@@ -14,7 +14,6 @@ function App() {
             Hello world!
         </h1>,
         <div>
-            salam
             <Header />
             <HeroSection />
             <MobileApp />
