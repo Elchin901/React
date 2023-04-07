@@ -17,7 +17,7 @@ export default function Header() {
           </a>
           <a href="#" className="flex text-white items-center gap-x-2 text-opacity-80 hover:text-opacity-100 transition-all ">
             <RiUserFill size={20} />
-            Giris Yap/
+            Giris Yap
           </a>
           <a href="#" className="flex text-white item-center gap-x-2 text-opacity-80 hover:text-opacity-100 transition-all ">
             <RiUserAddFill size={20} />
