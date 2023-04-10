@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, onClick} from "react";
 import Slider from "react-slick";
 import Banners from 'api/banners.json';
 import Title from 'components/ui/Title';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-function NextBtn({className,style,onclick}){
+function NextBtn({className , style , onclick}){
   return(
     <button className={"text-brand-color absolute top-1/2 -right-6 -translate-1/2"} onClick={onClick}> 
       <IoIosArrowForward size={22}/>
@@ -11,7 +12,7 @@ function NextBtn({className,style,onclick}){
   )
 }
 
-function PrewBtn({className,style,onclick}){
+function PrevBtn({className,style,onclick}){
   return(
     <button className={"text-brand-color absolute top-1/2 -right-6 -translate-1/2"} onClick={onClick}> 
       <IoIosArrowBack size={22}/>
@@ -31,13 +32,13 @@ export default function Campaigns() {
     dots: false,
     infinite: true,
     speed: 500,
-    arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 500,
     autoplaySpeed: 2000,
-    cssEase: "linear"
+    nextArrow:<NextBtn/>,
+    prewArrow:<PrevBtn/>,
   };
 
 
