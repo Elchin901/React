@@ -13,10 +13,10 @@ function App() {
         <div>
             <Header />
             <HeroSection />
-            <MobileApp />
+            <Categories />
             <Campaigns />
             <Cards />
-            <Categories />
+            <MobileApp />
             <Favorites />
             <Footer />
         </div>

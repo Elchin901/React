@@ -1,8 +1,21 @@
 import Slider from "react-slick";
+import React, { useState } from "react";
+import ReactFlagsSelect from "react-flags-select";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {BsFacebook} from "react-icons/bs";
 
 export default function HeroSection() {
+
+  const [selected, setSelected] = useState("TR");
+
+  const phones = {
+    US: '+1',
+    DE: '+55',
+    TR: '+90',
+    IT: '+7',
+    IN: '+15'
+  }
 
   const settings = {
     dots: false,
@@ -37,6 +50,35 @@ export default function HeroSection() {
           <h3 className="mt-10 text-4xl text-white font-semibold">
             Dakikalar icinde <br /> kapinizda <br />
           </h3>
+        </div>
+        <div className="w-[400px] rounded-lg bg-gray-50 p-6">
+          <h4 className="text-primary-brand-color font-semibold text-center mb-4">
+            Giris yap ve kayit ol
+          </h4>
+          <div className="grid gap-y-3">
+            <div className="flex gap-x-2">
+              <ReactFlagsSelect
+                countries={Object.keys(phones)}
+                customLabels={phones}
+                onSelect={code => setSelected(code)}
+                selected={selected}
+                className="flag-select"
+              />
+
+              <label className="flex-1 relative block">
+                <input required className="h-14 px-4 border-2 border-gray-200 rounded w-full hover:border-primary-brand-color outline-none peer text-sm pt-2" />
+                <span className="absolute top-0 left-0 h-full px-4 flex items-center text-sm text-gray-500 transition-all peer-focus:h-7 peer-focus:text-primary-brand-color peer-focus:text-xs peer-valid:h-7 peer-valid:text-primary-brand-color peer-valid:text-xs ">Telefon Numarasi</span>
+              </label>
+            </div>
+            <button className="bg-brand-yellow  text-primary-brand-color transition-colors hover:bg-primary-brand-color hover:text-brand-yellow h-12 flex items-center justify-center w-full rounded-md text-sm font-semibold ">
+              Telefon Numarasi ile devam et
+            </button>
+            <hr className="h-[1px] bg-gray-300 my-2"/>
+            <button className="bg-blue-100 px-4  text-primary-brand-color transition-colors hover:bg-primary-brand-color hover:text-blue-100 h-12 flex items-center w-full rounded-md text-sm font-semibold ">
+             <BsFacebook size={20} /> 
+             <span className="mx-auto">Facebook ile devam et</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
