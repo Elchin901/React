@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "title": "Her siparişinize bir kampanya",
+        "description": "Getir'de vereceğiniz her siparişe uygun bir kampanya bulabilirsiniz.",
+        "image": "https://getir.uk/_next/image/?url=https%3A%2F%2Flanding-strapi-images-development.s3.eu-west-1.amazonaws.com%2Feveryday_products_d851e0a63f.svg&w=256&q=75"
+    },
+    {
+        "id":2,
+        "title": "Dakikalar içinde kapinizda",
+        "description": "Getir'le siparişiniz dakikalar içinde kapiniza gelir.",
+        "image": "https://getir.uk/_next/image/?url=https%3A%2F%2Flanding-strapi-images-development.s3.eu-west-1.amazonaws.com%2Fdelivery_in_minutes_fa412d61a9.svg&w=256&q=75"
+    },
+    {
+        "id":3,
+        "title": "Binlerce çeşit mutluluk",
+        "description": "Getir'de binlerce çeşit arasindan seçiminizi yapabilirsiniz.",
+        "image":"https://getir.uk/_next/image/?url=https%3A%2F%2Flanding-strapi-images-development.s3.eu-west-1.amazonaws.com%2Fno_substitutions_2e96141d61.svg&w=256&q=75"
+    }
+]
