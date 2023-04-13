@@ -620,6 +620,10 @@ html, body {
   left: 0px;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -630,10 +634,6 @@ html, body {
 
 .top-3 {
   top: 0.75rem;
-}
-
-.right-3 {
-  right: 0.75rem;
 }
 
 .z-20 {
@@ -688,6 +688,10 @@ html, body {
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-40 {
+  height: 10rem;
 }
 
 .h-\[1px\] {
@@ -752,10 +756,6 @@ html, body {
   justify-content: space-between;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
 .gap-0 {
   gap: 0px;
 }
@@ -774,16 +774,16 @@ html, body {
           column-gap: 2rem;
 }
 
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
 .gap-y-2 {
   row-gap: 0.5rem;
 }
 
 .gap-y-3 {
   row-gap: 0.75rem;
-}
-
-.gap-y-1 {
-  row-gap: 0.25rem;
 }
 
 .whitespace-nowrap {
@@ -845,6 +845,11 @@ html, body {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.bg-primary-brand-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(93 62 188 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -854,16 +859,16 @@ html, body {
   object-fit: cover;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-2 {
