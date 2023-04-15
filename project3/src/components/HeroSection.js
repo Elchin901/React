@@ -3,14 +3,12 @@ import React, { useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {BsFacebook} from "react-icons/bs";
-import { useWindowWidth} from '@react-hook/window-size'
+import { BsFacebook } from "react-icons/bs";
+import { useWindowWidth } from '@react-hook/window-size'
 
 export default function HeroSection() {
 
-  const Component = (props) => {
-    const windowWidth = useWindowWidth()
-  }
+  const windowWidth = useWindowWidth()
 
   const [selected, setSelected] = useState("TR");
 
@@ -38,7 +36,7 @@ export default function HeroSection() {
 
   return (
     <div className="relative h-auto md:h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
-      <Slider {...settings}>
+      {windowWidth >= 768 && <Slider {...settings}>
         <div>
           <img className="w-full h-[500px] object-cover " src="https://i0.wp.com/www.middleeastmonitor.com/wp-content/uploads/2021/08/20210814_2_49606971_67906843.jpg?quality=85&strip=all&zoom=1&ssl=1" />
         </div>
@@ -48,7 +46,7 @@ export default function HeroSection() {
         <div>
           <img className="w-full h-[500px] object-cover " src="https://www.tomnorwell.com/wp-content/uploads/2022/01/Getir-header-fallback.jpg" />
         </div>
-      </Slider>
+      </Slider>}
       <div className="md:container flex justify-between items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
         <div className="hidden md:block">
           <img src="https://getir.com/_next/image?url=https%3A%2F%2Flanding-strapi-images-development.s3.eu-west-1.amazonaws.com%2Fgetir_groceries_342882c582.svg&w=1920&q=75" />
@@ -78,10 +76,10 @@ export default function HeroSection() {
             <button className="bg-brand-yellow  text-primary-brand-color transition-colors hover:bg-primary-brand-color hover:text-brand-yellow h-12 flex items-center justify-center w-full rounded-md text-sm font-semibold ">
               Telefon Numarasi ile devam et
             </button>
-            <hr className="h-[1px] bg-gray-300 my-2"/>
+            <hr className="h-[1px] bg-gray-300 my-2" />
             <button className="bg-blue-100 px-4  text-primary-brand-color transition-colors hover:bg-primary-brand-color hover:text-blue-100 h-12 flex items-center w-full rounded-md text-sm font-semibold ">
-             <BsFacebook size={20} /> 
-             <span className="mx-auto">Facebook ile devam et</span>
+              <BsFacebook size={20} />
+              <span className="mx-auto">Facebook ile devam et</span>
             </button>
           </div>
         </div>
