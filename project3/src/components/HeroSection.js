@@ -35,7 +35,7 @@ export default function HeroSection() {
     <div className="relative h-auto md:h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
       <Slider {...settings}>
         <div>
-          <img className="w-full h-[500px] object-cover " src="https://i0.wp.com/www.middleeastmonitor.com/wp-content/uploads/2021/08/20210814_2_49606971_67906843.jpg?quality=85&strip=all&zoom=1&ssl=1" />
+          <img className="w-full h-auto md:h-[500px] object-cover " src="https://i0.wp.com/www.middleeastmonitor.com/wp-content/uploads/2021/08/20210814_2_49606971_67906843.jpg?quality=85&strip=all&zoom=1&ssl=1" />
         </div>
         <div>
           <img className="w-full h-[500px] object-cover " src="https://www.igpdecaux.it/sites/default/files/styles/gallery_formatter_slide_2/public/case_history/getir_17-01-2022_full-wrap_darsena_milano_q2_08.jpg?itok=oyawb44j" />
@@ -51,7 +51,7 @@ export default function HeroSection() {
             Dakikalar icinde <br /> kapinizda <br />
           </h3>
         </div>
-        <div className="w-[400px] rounded-lg bg-gray-50 p-6">
+        <div className="w-full md:w-[400px] rounded-lg bg-gray-50 p-6">
           <h4 className="text-primary-brand-color font-semibold text-center mb-4">
             Giris yap ve kayit ol
           </h4>
