@@ -2,6 +2,8 @@
 
 export default function BottomBar() {
   return (
-    <div>BottomBar</div>
+    <div className="h-24">
+      BottomBar
+    </div>
   )
 }

@@ -421,6 +421,26 @@ video {
   display: none;
 }
 
+html,body,#root {
+  height: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  height: calc(100% - 6rem);
+  display: flex
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -560,4 +580,89 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.bg-active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-link {
+  --tw-text-opacity: 1;
+  color: rgb(179 179 179 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
