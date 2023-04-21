@@ -1,23 +1,33 @@
-
+import { Icon } from "Icons"
+import { NavLink } from "react-router-dom"
 
 export default function Menu() {
   return (
     <nav className="px-2">
         <ul className=" flex flex-col">
             <li>
-                <a href="#" className="h-10 flex items-center text-sm font-semibold text-white rounded bg-active hover:text-white px-4">
+                <NavLink to={"/"} activeClassName="bg-active text-white"  className="h-10 gap-x-4 flex items-center text-sm font-semibold text-link rounded  hover:text-white px-4">
+                    <span>
+                        <Icon name="home"/>
+                    </span>
                     Ana sayfa
-                </a>
+                </NavLink>
             </li>
-            <li>
-                <a href="#" className="h-10 flex items-center text-sm font-semibold text-link hover:text-white px-4">
+            <li>    
+                <NavLink to={"/search"} activeClassName="bg-active text-white" className="h-10 gap-x-4 flex items-center text-sm font-semibold text-link hover:text-white px-4">
+                   <span>
+                    <Icon name="search"/>
+                   </span>
                     Ara
-                </a>
+                </NavLink>
             </li>
             <li>
-                <a href="#" className="h-10 flex items-center text-sm font-semibold text-link hover:text-white px-4">
+                <NavLink to={"collection"} activeClassName="bg-active text-white" className="h-10 gap-x-4 flex items-center text-sm font-semibold text-link hover:text-white px-4">
+                    <span>
+                        <Icon name="collection"/>
+                    </span>
                     Kitapligin
-                </a>
+                </NavLink>
             </li>
         </ul>
     </nav>
