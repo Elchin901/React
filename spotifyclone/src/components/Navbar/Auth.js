@@ -25,10 +25,11 @@ export default function Auth() {
                         <Menu.Item>
                             {({ active }) => (
                                 <a
-                                    className={`h-10 flex items-center px-2 text-sm ${active && 'bg-white bg-opacity-20'}`}
+                                    className={`h-10 justify-between flex items-center px-2 text-sm ${active && 'bg-white bg-opacity-10'}`}
                                     href="#"
                                 >
                                     Account settings
+                                    <Icon size={16} name={'external'}></Icon>
                                 </a>
                             )}
                         </Menu.Item>
