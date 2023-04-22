@@ -1,8 +1,13 @@
+import Hidden from "./components/Hidden";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      test
+      <Hidden/>
+      <Main/>
+      <Footer/>
     </div>
   );
 }
