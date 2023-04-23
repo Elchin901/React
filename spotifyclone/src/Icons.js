@@ -110,7 +110,7 @@ const NextIcon = ({size}) => {
 const PlayIcon = ({size}) => {
 	return (
 		<svg viewBox="0 0 24 24" width={size} height={size} xmlns="http://www.w3.org/2000/svg">
-			<polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"/>
+			<polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="black"/>
 		</svg>
 	)
 }

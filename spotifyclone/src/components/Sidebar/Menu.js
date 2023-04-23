@@ -6,7 +6,7 @@ export default function Menu() {
     <nav className="px-2">
         <ul className=" flex flex-col">
             <li>
-                <NavLink to={"/"} activeClassName="bg-active text-white"  className="h-10 gap-x-4 flex items-center text-sm font-semibold text-link rounded  hover:text-white px-4">
+                <NavLink to={"/home"} activeClassName="bg-active text-white"  className="h-10 gap-x-4 flex items-center text-sm font-semibold text-link rounded  hover:text-white px-4">
                     <span>
                         <Icon name="home"/>
                     </span>
