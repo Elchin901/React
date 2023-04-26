@@ -12,7 +12,9 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        primary:"#040407"
+        primary:"#040407",
+        gree:"#a9ff03",
+        prp:"#c58fff"
       },
       fontFamily:{
         'kanit': ['Kanit','sans-serif']
