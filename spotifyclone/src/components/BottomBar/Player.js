@@ -39,7 +39,7 @@ export default function Player() {
                         step={STEP}
                         min={MIN}
                         max={MAX}
-                        onChange={(values) => setState( values )}
+                        onChange={(values) => setValues( values )}
                         renderTrack={({ props, children }) => (
                             <div
                                 onMouseDown={props.onMouseDown}
