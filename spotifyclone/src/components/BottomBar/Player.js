@@ -9,7 +9,7 @@ export default function Player() {
   
 
     const [audio, state, controls, ref] = useAudio({
-        src:'',
+        src:'https://cdn.freesound.org/previews/685/685564_5674468-lq.mp3',
         autoPlay: false,
     });
 
