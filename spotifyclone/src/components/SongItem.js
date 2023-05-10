@@ -1,8 +1,13 @@
 import React from 'react'
 import { Icon } from 'Icons'
 import { NavLink } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { setCurrent } from 'stores/player'
 
-export default function SongItem() {
+export default function SongItem({item}) {
+    const dispatch = useDispatch() 
+    const {current} = useSelector(state => state.player)
+
     const imageStyle = item =>{
 
         switch(item.type) {
@@ -18,6 +23,10 @@ export default function SongItem() {
     
         }
       }
+
+    const updateCurrent = ()=> {
+        dispatch(setCurrent(item))
+    }
   return (
     <div>
         <NavLink
@@ -27,8 +36,10 @@ export default function SongItem() {
 
             <div className="pt-[100%] relative mb-4">
               <img src={item.image} className={`absolute inset-0 object-cover w-full h-full ${imageStyle(item)}`} />
-              <button className="w-10 h-10 rounded-full bg-primary absolute group-hover:flex group-focus:flex bottom bottom-2 right-2 hidden items-center justify-center">
-                <Icon name="play" size={16}/>
+              <button 
+                onClick={updateCurrent}
+                className="w-10 h-10 rounded-full bg-primary absolute group-hover:flex group-focus:flex bottom bottom-2 right-2 hidden items-center justify-center">
+                <Icon name={current ?.id == item.id ? 'pause' : 'play'} size={16}/>
               </button>
             </div>
             <h6 className="overflow-hidden overflow-ellipsis whitespace-nowrap text-base font-semibold">{item.title}</h6>

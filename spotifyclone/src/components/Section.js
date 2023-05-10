@@ -8,7 +8,7 @@ export default function Section({ title, more = false, items }) {
     <section>
       <header className="flex items-center justify-between mb-4">
         <NavLink to={more ?? '#'}>
-          <h3 className="text-2xl text-white font-semibold tracking-tight">{title}</h3>
+          <h3 className="text-2xl text-white font-semibold tracking-tight" >{title}</h3>
         </NavLink>
         
         {more && (

@@ -2,16 +2,21 @@ import { Icon } from 'Icons'
 import { useAudio } from 'react-use'
 import { secondsToTime } from 'utils'
 import CustomRange from 'components/CustomRange';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
+import { useSelector } from 'react-redux';
 
 
 export default function Player() {
   
+    const {current} = useSelector( state => state.player)
 
     const [audio, state, controls, ref] = useAudio({
-        src:'https://cdn.freesound.org/previews/685/685564_5674468-lq.mp3',
-        autoPlay: false,
+        src:current ?.src 
     });
+
+    useEffect(() =>{
+        
+    },[])
 
     const volumeIcon = useMemo(() => {
         if (state.volume === 0 || state.muted)
@@ -27,7 +32,7 @@ export default function Player() {
     return (
         <div className='flex justify-between px-4 items-center h-full'>
             <div className='min-w-[11.25rem] w-[30%]'>
-                sol
+
             </div>
             <div className='max-w-[45.125] w-[40%] flex flex-col items-center'>
                 <div className='flex items-center gap-x-2'>
