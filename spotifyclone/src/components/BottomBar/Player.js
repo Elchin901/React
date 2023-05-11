@@ -1,17 +1,19 @@
-import { Icon } from 'Icons'
-import { useAudio } from 'react-use'
-import { secondsToTime } from 'utils'
-import CustomRange from 'components/CustomRange';
-import { useEffect, useMemo } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { setControls,setSidebar } from 'stores/player'
-
+import {Icon} from "Icons";
+import {useAudio, useFullscreen, useToggle} from 'react-use';
+import {secondsToTime} from "utils";
+import CustomRange from "components/CustomRange";
+import {useEffect, useMemo, useRef} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {setControls, setPlaying, setSidebar} from "stores/player";
 
 
 export default function Player() {
 
-    const dispatch = useDispatch();
-    const { current } = useSelector(state => state.player)
+    const fsRef = useRef()
+    const [show, toggle] = useToggle(false);
+
+    const dispatch = useDispatch()
+    const {current, sidebar} = useSelector(state => state.player)
 
     const [audio, state, controls, ref] = useAudio({
         src: current?.src
@@ -20,6 +22,10 @@ export default function Player() {
     useEffect(() => {
         controls.play()
     }, [current])
+
+    useEffect(() => {
+        dispatch(setPlaying(state.playing))
+    }, [state.playing])
 
     useEffect(() => {
         dispatch(setControls(controls))
@@ -86,7 +92,7 @@ export default function Player() {
                         <Icon size={16} name={"repeat"} />
                     </button>
                 </div>
-                <div className='w-full flex items-center gap-x-2'>
+                <div className='w-full flex items-center mt-1.5 gap-x-2'>
                     {audio}
                     <div className='text-[0.688rem] text-white text-opacity-70'>
                         {secondsToTime(state?.time)}
@@ -129,7 +135,9 @@ export default function Player() {
                         }}
                     />
                 </div>
-                <button className='w-8 h-8 flex justify-center items-center text-white text-opacity-50 hover:text-opacity-100'>
+                <button 
+                onClick={toggle}
+                className='w-8 h-8 flex justify-center items-center text-white text-opacity-50 hover:text-opacity-100'>
                     <Icon size={16} name={"fullScreen"} />
                 </button>
             </div>
