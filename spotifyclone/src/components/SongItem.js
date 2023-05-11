@@ -1,4 +1,3 @@
-import React from 'react'
 import { Icon } from 'Icons'
 import { NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
