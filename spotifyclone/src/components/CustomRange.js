@@ -24,7 +24,7 @@ export default function
                                 background: getTrackBackground({
                                     values: [value],
                                     colors: ["#1db954", "#535353"],
-                                    min: min,
+                                    min,
                                     max
                                 }),
                             }}
