@@ -4,7 +4,7 @@ import {Hero } from "./components/Hero/Hero"
 
 function App(){
   return(
-    <div>
+    <div className="container mx-auto  w-2/5  ">
       <Navbar/>
       <About/>
       <Hero />
