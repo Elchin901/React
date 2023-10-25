@@ -2,4 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.color1{
+    color: #AA14F0;
+}
+.color2{
+    color: #BC8CF2;
+}
+.color3{
+    color:#EEEEEE;
+}
+ body{
+    background-color: black;
+ }
