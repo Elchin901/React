@@ -17,20 +17,19 @@ export default function Sidebar() {
           aperiam reiciendis temporibus.
         </p>
       </div>
-      <div className="sidebatItem">
+      <div className="sidebarItem">
         <span className="sidebarTitle">categories</span>
         <ul className="sidebarList">
-          <li className="sidebarItemList">life</li>
-          <li className="sidebarItemList">music</li>
-          <li className="sidebarItemList">sport</li>
-          <li className="sidebarItemList">healty</li>
-          <li className="sidebarItemList">tech</li>
-          <li className="sidebarItemList">cinema</li>
-          <li className="sidebarItemList">book</li>
+          <li className="sidebarListItem">life</li>
+          <li className="sidebarListItem">music</li>
+          <li className="sidebarListItem">sport</li>
+          <li className="sidebarListItem">tech</li>
+          <li className="sidebarListItem">cinema</li>
+          <li className="sidebarListItem">book</li>
         </ul>
       </div>
-      <div className="sidebatItem">
-        <span className="sidebarTitel">follow us</span>
+      <div className="sidebarItem">
+        <span className="sidebarTitle">follow us</span>
         <div className="sidebarSocial">
           <i className="sidebarIcon fa-brands fa-xbox"></i>
           <i className="sidebarIcon fa-brands fa-discord"></i>
