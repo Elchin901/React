@@ -5,7 +5,7 @@ export default function Post() {
   return (
     <div>
         <img className='postImg'
-        src=''
+        src='https://miro.medium.com/v2/resize:fit:1096/1*RgCsj3vPWBJ_eYf-kx8JZA.png'
         alt=''
         />
 
@@ -17,7 +17,9 @@ export default function Post() {
             <span className='postTitle'>
                 lorem ipsum dolor sit amet
             </span>
+            <hr/>
+            <span className='postDate'>1 hour ago</span>
         </div>
     </div>
-  )
+  );
 }
