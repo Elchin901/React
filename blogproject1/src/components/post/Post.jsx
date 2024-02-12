@@ -3,7 +3,7 @@ import "./post.css"
 
 export default function Post() {
   return (
-    <div>
+    <div className='post'>
         <img className='postImg'
         src='https://miro.medium.com/v2/resize:fit:1096/1*RgCsj3vPWBJ_eYf-kx8JZA.png'
         alt=''
@@ -20,6 +20,12 @@ export default function Post() {
             <hr/>
             <span className='postDate'>1 hour ago</span>
         </div>
+        <p className='postDesc'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Quaerat iure quae mollitia reprehenderit nam voluptatem!
+          Reiciendis fuga excepturi laboriosam minus atque suscipit earum,
+          omnis modi eum rerum. Quo, aliquid ipsum.
+        </p>
     </div>
   );
 }
