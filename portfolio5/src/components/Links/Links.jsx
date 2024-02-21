@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 export const Links = () => {
   return (
-    <div className='pb-[150px]'>
+    <div className='pb-[150px] '>
         <div>
             <h2 className='color3'>Links</h2>
         </div>
