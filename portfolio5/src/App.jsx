@@ -7,8 +7,8 @@ import { Links } from "./components/Links/links"
 
 function App() {
   return (
-    <div className="bg-black">
-      <div className="mx-auto  w-[500px] flex-auto">
+    <div className="bg-black flex justify-center">
+      <div className="w-[500px] mx-2">
         <Navbar />
         <About />
         <Hero />
