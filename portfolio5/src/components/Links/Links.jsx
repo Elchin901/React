@@ -13,16 +13,21 @@ export const Links = () => {
                     <li className='mb-4'>Github</li>
                     <li className='mb-4'>LinkedIn</li>
                     <li className='mb-4'>Gmail</li>
+                    <li className="mb-4">Number</li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li className='mb-4'>elchingonagov</li>
-                    <li className='mb-4'>Elchin901</li>
-                    <li className='mb-4'>Elchin Gonagov</li>
-                    <li className='mb-4'>elchingonagov@gmail.com</li>
+                    <li className='mb-4'><a href="" target="_blank">elchingonagov</a></li>
+                    <li className='mb-4'><a href="https://github.com/Elchin901">Elchin901</a></li>
+                    <li className='mb-4'><a href="https://www.linkedin.com/in/elchin-gonagov-6a9b46233">linkedin.com/elchin-gonagov</a></li>
+                    <li className='mb-4'><a href="mailto:your.elchingonagov@gmail.com">elchingonagov@gmail.com</a></li>
+                    <li className="mb-4">+ 48 780 761 421</li>
                 </ul>
             </div>
+        </div>
+        <div>
+            <a href="#"></a>
         </div>
     </div>
   )
