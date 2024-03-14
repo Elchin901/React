@@ -35,6 +35,10 @@ export const Work = () => {
         </div>
       </div>
 
+      <div className='flex justify-center py-5 '>
+        <button className='bg-violet-600 hover:bg-violet-900 text-white poppins-medium py-2 px-7 rounded-full'><a href='#'>More</a></button>
+      </div>
+
     </div>
   )
 }

@@ -8,9 +8,9 @@ export const Navbar = () => {
         <div>
           <img className='w-[100px] rounded-full' src={getImageUrl('img/g5.webp')}></img>
         </div>
-        <div className='pt-6 pl-3 color1 '>
-          <h1>Elchin Gonagov</h1>
-          <p>Front-End Developer</p>
+        <div className='pt-6 pl-3  '>
+          <h1 className='color1'>Elchin Gonagov</h1>
+          <p className='color2'>Junior Front-End Developer</p>
         </div>
       </div>
     </div>
