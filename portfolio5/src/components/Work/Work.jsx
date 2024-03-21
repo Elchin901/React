@@ -9,28 +9,28 @@ export const Work = () => {
       <div className='flex py-10'>
         <img src={getImageUrl('img/web1.png')} className='h-32'></img>
         <div className='px-3'>
-          <h4 className='color2 poppins-regular'>Photo.html</h4>
+          <h4 className='color2 poppins-regular'><a href='https://elchin901.github.io/web1/Photo.html'>Photo.html</a></h4>
           <p className='color3 text-[12px] poppins-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corporis ipsa, repellat odio,res exercitationem dolore praesentium deserunt?</p>
         </div>
       </div>
       <div className='flex py-10'>
         <img src={getImageUrl('img/web2.png')} className='h-32'></img>
         <div className='px-3'>
-          <h4 className='color2 poppins-regular'>Photo.html</h4>
+          <h4 className='color2 poppins-regular'><a href='https://elchin901.github.io/web2/Flowie.html'>Flowers</a></h4>
           <p className='color3 text-[12px] poppins-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corporis ipsa, repellat odio,res exercitationem dolore praesentium deserunt?</p>
         </div>
       </div>
       <div className='flex py-10'>
         <img src={getImageUrl('img/web3.png')} className='h-32'></img>
         <div className='px-3'>
-          <h4 className='color2 poppins-regular'>Photo.html</h4>
+          <h4 className='color2 poppins-regular'><a href='https://elchin901.github.io/web3/Portland.html'>Phones</a></h4>
           <p className='color3 text-[12px] poppins-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corporis ipsa, repellat odio,res exercitationem dolore praesentium deserunt?</p>
         </div>
       </div>
       <div className='flex py-10'>
         <img src={getImageUrl('img/web4.png')} className='h-32'></img>
         <div className='px-3'>
-          <h4 className='color2 poppins-regular'>Photo.html</h4>
+          <h4 className='color2 poppins-regular'><a href='https://elchin901.github.io/web4/Spotify.html'>Spotify Clone</a></h4>
           <p className='color3 text-[12px] poppins-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corporis ipsa, repellat odio,res exercitationem dolore praesentium deserunt?</p>
         </div>
       </div>
