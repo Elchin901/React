@@ -18,7 +18,8 @@ export const Links = () => {
             </div>
             <div>
                 <ul className="poppins-regular">
-                    <li className='mb-4'><a href="https://drive.google.com/file/d/1kTvlivaVjhbdxbA4RgdTd1E296yOIGuT/view?usp=sharing" target="_blank">elchingonagov</a></li>
+                    <li className='mb-4'><a href="https://drive.google.com/file/d/1939OtMOUGFd-o-9LgX0YfYLpmK03tIMg/view?usp=drive_link" target="_blank">elchingonagov</a></li>
+                    
                     <li className='mb-4'><a href="https://github.com/Elchin901">Elchin901</a></li>
                     <li className='mb-4'><a href="https://www.linkedin.com/in/elchin-gonagov-6a9b46233">linkedin.com/elchin-gonagov</a></li>
                     <li className='mb-4'><a href="mailto:your.elchingonagov@gmail.com">elchingonagov@gmail.com</a></li>
