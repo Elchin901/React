@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "serve": "next start"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^5.4.0",
     "@next/font": "13.1.1",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
