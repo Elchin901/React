@@ -9,7 +9,7 @@ import { Links } from "./components/Links/links";
 function App() {
   return (
     <div className="bg-black flex justify-center">
-      <div className="w-[500px] mx-2">
+      <div className="w-[500px] mx-10">
         <Navbar/>
         <About />
         <Hero />
