@@ -8,8 +8,8 @@ import { Links } from "./components/Links/links";
 
 function App() {
   return (
-    <div className="bg-black flex justify-center">
-      <div className="w-[500px] mx-10">
+    <div className="bg-black  flex justify-center">
+      <div className="w-[500px] px-5">
         <Navbar/>
         <About />
         <Hero />
