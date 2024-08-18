@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./assests/css/tailwind.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { More } from "./components/More/more.jsx";
+import { More } from "./components/More/More.jsx";
 
 
 const router = createBrowserRouter([{
@@ -13,7 +13,7 @@ const router = createBrowserRouter([{
 {
   path:'/More',
   element:<More/>,
-  errorElement:<div>404 not found</div>
+  
 },
 ]);
 
