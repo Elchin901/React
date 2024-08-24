@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './App.css';
 import Course from './Course';
+import SearchHeader from './SearchHeader';
 
 
 
@@ -23,8 +24,9 @@ function App() {
   });
   return (
     <div className="App">
-      <button onClick={handleClick}></button>
-      <div>{courseList}</div>
+      {/* <button onClick={handleClick}>Kurs Ekle</button>
+      <div>{courseList}</div> */}
+      <SearchHeader/>
       
       
     </div>
