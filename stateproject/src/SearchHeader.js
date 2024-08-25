@@ -6,6 +6,7 @@ function SearchHeader() {
         <form>
             <label>What do you want</label>
             <br/>
+            <br/>
             <input/>
         </form>
     </div>
